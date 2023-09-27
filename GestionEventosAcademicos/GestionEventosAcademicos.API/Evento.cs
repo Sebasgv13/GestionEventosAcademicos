@@ -1,14 +1,17 @@
 ﻿namespace GestionEventosAcademicos.API
 {
-    public class Evento
+
+    class Eventos
     {
 
-        public string Nombre { get; set; }
-        public DateTime Fecha { get; set; }
-        public string Ubicacion { get; set; }
-        public string Descripcion { get; set; }
-        public string Tema { get; set; }
-        public List<Sesion> Sesiones { get; set; } = new List<Sesion>();
+        class Evento
+        {
+            public string Nombre { get; set; }
+            public DateTime Fecha { get; set; }
+            public string Ubicacion { get; set; }
+            public string Descripcion { get; set; }
+            public string Tema { get; set; }
+            public List<Sesion> Sesiones { get; set; } = new List<Sesion>();
+        }
     }
 }
-
